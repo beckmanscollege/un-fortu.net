@@ -1,0 +1,66 @@
+body {
+background: ivory;
+}
+
+.header {
+font-family: "ocr-a-std", monospace;
+font-weight: 400;
+font-style: normal;
+font-size: 6.5vw;
+color: black;
+position: absolute;
+left: 4vw;
+}
+
+.symbol {
+  width: 23vw;
+  position: absolute;
+  left: 22.3vw;
+  top: 1.5vw;
+}
+  
+
+  .hidden {
+    display: none;
+  }
+
+@keyframes blink { 
+  50% {opacity: 0;
+  }
+}
+
+.text { 
+animation: blink 1s linear infinite;
+}
+
+h2 { 
+position: absolute;
+left: 59.6vw;
+top: 45vw;
+font-family: "ocr-a-std", monospace;
+font-weight: 400;
+font-style: normal;
+font-size: 3vw;
+}
+
+#firstImage {
+position: relative;
+left: 48vw;
+top: 6vw;
+width:54vw;
+}
+
+#secondImage {
+width: 37vw;
+position: relative;
+top: 8vw;
+left: 55vw;
+}
+
+#thirdImage {
+width: 55vw;
+position: relative;
+top: 14vw;
+left: 43.5vw;
+
+}

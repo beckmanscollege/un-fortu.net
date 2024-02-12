@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  <link rel="stylesheet" href="https://use.typekit.net/jrg3czq.css">
+  
+</head>
+<body>
+ 
+<audio id="clickSound" src=""></audio>
+
+ 
+<div class="header">
+    <h1>UN <br> FORTU<br>.NET</h1>
+</div>
+  
+  
+ <img src="https://i.ibb.co/hHySjWY/Symbol.png" class="symbol">
+
+<img id="firstImage" class="image" src="https://i.ibb.co/jwJLRtX/Wrapper-black.png" alt="First Image">
+<img id="secondImage" class="image" src="https://i.ibb.co/S0C0jdk/Lyckokaka-hel.png" alt="Second Image" style="display: none;">
+<img id="thirdImage" class="image"  alt="Third Image" style="display: none;">
+
+<script>
+    var thirdImages = [
+        "https://i.ibb.co/Vvf0xVh/Fortune-1.png",
+        "https://i.ibb.co/qjDXL9C/Fortune-2.png", 
+        "https://i.ibb.co/d2Z3Bc8/Fortune-3.png",
+        "https://i.ibb.co/5BjL09Y/Fortune-4.png",
+        "https://i.ibb.co/c1sf3YP/Fortune-5.png",               "https://i.ibb.co/VVY27Pr/Fortune-6.png",
+        "https://i.ibb.co/7QBkxP4/Fortune-7.png",
+        "https://i.ibb.co/YQRZbcG/Fortune-8.png",
+        "https://i.ibb.co/tK3crPP/Fortune-9.png"
+    ];
+
+    var secondImage = document.getElementById("secondImage");
+    var thirdImage = document.getElementById("thirdImage");
+
+    document.getElementById("firstImage").addEventListener("click", function() {
+        this.style.display = "none";
+        secondImage.style.display = "block";
+    });
+
+    secondImage.addEventListener("click", function() {
+        this.style.display = "none";
+        thirdImage.src = thirdImages[Math.floor(Math.random() * thirdImages.length)];
+        thirdImage.style.display = "block";
+    });
+</script>
+
+  <h2 id="text" class="text"><mark>^CLICK TO OPEN^</mark></h2>
+  
+</body>
+</html>
