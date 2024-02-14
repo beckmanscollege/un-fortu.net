@@ -10,13 +10,14 @@ font-size: 6.5vw;
 color: black;
 position: absolute;
 left: 4vw;
+top: -1vw;
 }
 
 .symbol {
   width: 23vw;
   position: absolute;
   left: 22.3vw;
-  top: 1.5vw;
+  top: 0.5vw;
 }
   
 
@@ -36,7 +37,7 @@ animation: blink 1s linear infinite;
 h2 { 
 position: absolute;
 left: 59.6vw;
-top: 45vw;
+top: 44vw;
 font-family: "ocr-a-std", monospace;
 font-weight: 400;
 font-style: normal;
@@ -46,21 +47,47 @@ font-size: 3vw;
 #firstImage {
 position: relative;
 left: 48vw;
-top: 6vw;
+top: 5vw;
 width:54vw;
 }
 
 #secondImage {
 width: 37vw;
 position: relative;
-top: 8vw;
+top: 7vw;
 left: 55vw;
 }
 
 #thirdImage {
 width: 55vw;
 position: relative;
-top: 14vw;
+top: 13vw;
 left: 43.5vw;
 
 }
+
+a {
+text-decoration: none;
+font-family: "ocr-a-std", monospace;
+font-weight: 400;
+font-style: normal;
+}
+
+a:hover {
+background-color: yellow;
+}
+
+#left {
+  position: absolute;
+  top: 55vw;
+  left: 8vw;
+  font-size: 3vw;
+  color: black
+}
+
+#right {
+  position: absolute;
+  top: 55vw;
+  left: 80vw;
+  font-size: 3vw;
+  color: black
